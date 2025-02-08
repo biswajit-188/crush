@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="floating-hearts"></div>
+    </div>
+
+    <div class="container">
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="screen active">
+            <div class="scanning-text">
+                <p>Scanning Your Heart ❤️...</p>
+                <p>Analyzing Feelings... 🤔</p>
+                <p>99.9% Love Detected! 😍</p>
+            </div>
+        </div>
+
+        <!-- Questions Screen -->
+        <div id="questionsScreen" class="screen">
+            <div class="question" id="q1">
+                <h2>If I give you unlimited chocolates, will you say yes? 🍫</h2>
+                <button class="yes-btn">Yes!</button>
+                <button class="no-btn">No</button>
+            </div>
+
+            <div class="question" id="q2" style="display: none;">
+                <h2>What do you like most about me? 😎</h2>
+                <button class="option-btn">Your smile 🥰</button>
+                <button class="option-btn">Your humor 🤩</button>
+                <button class="option-btn">Your love for me ❤️</button>
+            </div>
+
+            <div class="question" id="q3" style="display: none;">
+                <h2>Will you be my Valentine? 💕</h2>
+                <button class="yes-btn">Of course!</button>
+                <button class="no-btn">Let me think...</button>
+            </div>
+        </div>
+
+        <!-- Final Screen -->
+        <div id="finalScreen" class="screen">
+            <h1>You're My Valentine! 🎉</h1>
+            <div class="gift-selection">
+                <h2>Choose your gift! 🎁</h2>
+                <button class="gift-btn">🍫 A box of chocolates</button>
+                <button class="gift-btn">🌹 A bouquet of roses</button>
+                <button class="gift-btn">🧸 A cute teddy bear</button>
+                <button class="gift-btn selected">💖 A lifetime of love</button>
+            </div>
+            <button id="download-history" class="download-btn">📝 Download Our Love Story</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
